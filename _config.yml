@@ -2,3 +2,6 @@ theme: jekyll-theme-tactile
 title: Roundhouse Cookie Co.
 description: Sugar Cookies for all occasions
 repository: aaronmader/roundhousecookieco.ca
+sass:
+  sass_dir: _sass
+  style: compressed
