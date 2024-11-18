@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Sugar Cookies for all occasions
+description: Serving Grey and Bruce Counties
+---
+
 ## Round House Cookie Co
 
 In the heart of the culinary universe stands Emily Mader, the visionary founder behind Round House Cookie Co. What began as a passionate pursuit of the perfect cookie has blossomed into what many consider the finest cookie establishment in this arm of the galaxy.

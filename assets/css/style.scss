@@ -1,0 +1,31 @@
+---
+---
+@import "{{ site.theme }}";
+
+// Font imports
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Fira+Sans:wght@400;500&display=swap');
+
+// Typography
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+// Colors
+body {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+.button, button {
+  background-color: rgb(115, 124, 95);
+  color: rgb(255, 255, 255);
+  &:hover {
+    background-color: darken(rgb(115, 124, 95), 10%);
+  }
+}
