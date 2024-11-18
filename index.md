@@ -11,7 +11,3 @@ Under Emily's leadership, Round House Cookie Co has become synonymous with excel
 Whether you're a local earthling or a visitor from distant star systems, we invite you to experience the magic of Emily Mader's cookie creations. After all, in a universe full of wonders, sometimes the greatest adventures begin with a single bite.
 
 ![Emily Mader](/assets/img/emily.jpg)
-
-## Contact Emily
-
-Would you like to get in touch? You can reach Emily at [roundhousecookieco@gmail.com](mailto:roundhousecookieco@gmail.com).
