@@ -1,37 +1,66 @@
-## Welcome to GitHub Pages
+# Round House Cookie Co Website
 
-You can use the [editor on GitHub](https://github.com/aaronmader/roundhousecookieco.ca/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repository contains the source code for the Round House Cookie Co website. The site is built using Jekyll and GitHub Pages.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Local Development Setup
 
-### Markdown
+The local development environment is set up using three automated scripts that handle different phases of the setup process:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 1. Initial Environment Setup
 
-```markdown
-Syntax highlighted code block
+Run the initialization script to set up your development environment:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+./initialize.sh
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+This script will:
+- Update package lists
+- Install Ruby and required development tools (build-essential, zlib1g-dev)
+- Install Jekyll and Bundler gems
+- Make other scripts executable
 
-### Jekyll Themes
+### 2. Installing/Updating Dependencies
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/aaronmader/roundhousecookieco.ca/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+After initialization or when pulling new changes, run the build script:
 
-### Support or Contact
+```bash
+./build.sh
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+To pull latest changes and update dependencies in one step:
+
+```bash
+./build.sh --pull
+```
+
+### 3. Starting the Local Server
+
+Start the Jekyll development server:
+
+```bash
+./start.sh
+```
+
+The site will be available at `http://localhost:4000`. The server will automatically detect and regenerate content when you make changes to the markdown files.
+
+## Development Workflow
+
+1. Make sure your environment is set up by running `./initialize.sh` (first time only)
+2. Update dependencies with `./build.sh`
+3. Start the local server with `./start.sh`
+4. Make your changes to the markdown (*.md) files
+5. Preview changes at `http://localhost:4000`
+6. Verify that CSS files are properly included in the `_site` directory after building
+
+## Theme and Styling
+
+This site uses Jekyll themes for styling. Do not add direct HTML styling unless specifically required, as Jekyll handles the conversion and styling through its theme system. The theme configuration can be found in `_config.yml`.
+
+## Need Help?
+
+If you encounter any issues:
+1. Ensure all dependencies are up to date by running `./build.sh`
+2. Check the Jekyll server output for any error messages
+3. Verify that all required gems are properly installed
+4. Make sure you're using the correct Ruby version
